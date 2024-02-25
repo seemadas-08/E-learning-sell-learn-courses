@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+    body{
+        background-color: rgb(239, 173, 107);
+    }
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+margin: 70px auto;
+  padding: 20px;
+  background: #f0f086;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.popup .content {
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+    <h2 style="text-align: center;">PAYMENT SECTION</h2>
+<div style="text-align: center">
+<a class="button" href="#popup1"><button">PAYMENT</button></a>
+</div>
+<div id="popup1" class="overlay">
+<div class="popup">
+    <h3>Mode of Payment</h3>
+<form>
+    <label for="PhonePay"><b>PhonePay <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXUAAACHCAMAAADeDjlcAAAAwFBMVEX///9nOrchISEAAAATExMdHR1mOLdiMrUXFxcbGxt5eXlsQLkKCgrY2NhhYWHx8fHz7/mXf8slJSWenp7AwMDt6Pbr6+s6OjrNzc2KiooJCQmBXcNLS0srKyu4uLhfKrVubm6Pc8daIrJhL7VdXV2UlJS4p9zd3d2jo6M7Ozt/f3+9rd7k3fLXzevt7e1FRUWurq6mj9PGuOJXG7Gxnth3UL6Yfszf1+/TyOlySLygiNCrltWEZMPDteGKasaSdsqaz77lAAANdElEQVR4nO2daVviPBSGkXQDQRCRpSzFFlxR0BF11HH+/79622Zp0i2nte+gM3k+eF2WNKR305OTk9NQqykpKSkpKSkpKSkpKSkpKSnJ1H1++fX2dPY+2U3eP57uz19uT/fdpL9b3Ze3j0PTcxzPNE3DMPy/nud4njF5fVjvu3F/p9bnux8+bsM4iCvg77jm/e2+m/i36fR84npJ3gJ7zz24f953Q/8iPXw4EuQM/O5RWfkq1L3ZOSYAOQVvvCoT/2nd/HQg3Zzn7h2r/v4pPRRljrmb9919t/z7al2GOebu3Oy78d9Vb2455iF3912ZmRJaT5zSzAOZ3sO+L+H76ZcBd1yyuvvTvi/iu+m1pEUX5O2UE1lA3YmXBdLFgj0Ipvmy70v5PlofZEH13k5DPR9n3RZRhnu+74v5LnrOnv57zA8/A5p9922fl/J99JITc3FYXLELNfzu6z4v5rvo1szBaexYuRuoY6l6u1zPedD9zh4hnEBdS0dhl6ibsmohImTO4NoFUjecX/u8pG+gnawDGz9Z2XuYHxOEZdQyU55+y0F696z0T+hMyjBVUCZbj5AR0mXLdC/gSI052edlfW3dwtbpIj8G8GgQecp/zFAXaDEiG3N6AI7WuCo2kK5XYM81PEYQ7LT7pn2fl/Z1dQv1BA+MQxYYkPo8TJ6K+6YJ7JH4BM/oSesf4JMc5T4mBfJfqFy2LAp22g/MXd7X/5vqFlskdVnHPQSfp1awE4IOpUSGQU37C3w4+KnyNUSdglx1TtG85zd4QHXUEoeogl39gPNJTvOjlJy4GI6Sry58usPkPJKT4U67o5I1eJ2XyX1xaQD3HWpjDOXG8NqVycMwHDJHzVlojd8oleAe6Ta3qwdvwqTKcwjER1c4nl2VqSaokZ7yTIRx8HScoafjDq7glj/6kVObW1GLBxehKqptL+rmznSKW4W3bIfIqSj0uESaprWsTjW17UX5qxNOlfWZZ/LTITqy6vW63vvO1F9zfZDi1B+yqRvy2toorvpyPI8VCqnX90l9EW+lPVyctAtUkB9trJQ6IPLYRvWY9IaGUFO4ov1Tb2qJZmo2Gl5CmyRJsaiWOrfYnaEk9VAaWnAX9BWph+RRfQs7XzK3dAvHrH7lVGhI160zqNfrrVnU3b8q9YB7E3R+rt8Y9E6cxxudcCoq/sE6b85lHMhuIqWuEVkNnVxQo8WwfxnqjaiZlDtaQM6XLSLhmaf5m5aPQTXvYx9IcvZkhp1Q7y2oljNE+lWDuYpfhXpjSlt5NEWIdA80BpwvDZAbgaLQrmsIYs6g7/aHyq9Mmn6Hqesz7tBFk1xQ65oc+SrUEe9czYc2xm7Lp2/PsMhXZJBjOdQ8dUA9piwzJoW6f9DShev5ktRrtTF+TrUj6el5Hsf/Qf1d0p5U6tTu2Cf43y9KnY2xA9np58CXXSqiLo32plOvXRM7iv8TqHfuBoNs/p3B4E52d/wacsqkVp9O/Q6PqagfLz7w6+AryZ+ZVk/9UOLEZFCnh3HTI+qd+eJqZvVmR6nzk9H1ctizZlfT8Uj8eLAKNA765MUqKNMbLhKofHX6i82sUR9uFlux/6ZTJ4dbwnjamTenPU2fbY4umcEHvmFUGXVDkt+bQb2DDXsDt5tR386Qpfsf6RaaJeYn2yukBX6nHsxuh8LHbdTyhUa1TlOzcRkNbRKj4OWQ1OBX0BBQZlC/DAdUbcG3YkZbYSGbTvUmsCWJqqgfeJKXUDOo165C7MRlx9RnnQX11sL5yYlwwt0SMR86/HjJdfc2hjYa9FpREQuJgZSLK656f1C54u5KBvV+2HorGk47S6EOrT4KDwPXkSqj7kgix0WoTzlkcXN60YvPHjVukMPUtXGdvzF1XePt0Ei4awFMPcIOpD6wYq3QcSOBmXbVUZdMkwpYmABZQ7NtjdBpDLnyPYuARAhp+GRrxqBi6vXgr9WyW6SAYJDbpJNaNkIt/A2NqAKYhbnrkRNbrA7dCi4BxHz/1Ecpo2nQczbX25PraUuPd/YlwTq7no/m1zPy34J9C+2ClrVcbVfNIfZMuZB9ZxhS0u3lZb+/muIJkE2naVnUF5Zw83ArdDRd9fsnS9xKbbkP6pLlpAzqmLO15P+rN3pkiBz18AWxyNMcU0SLu/DfQZP8T4dUSr21xA9PZ0UKjGgNYxv3bnJgjo0ZokYqnfqFLdSyxdfSIKVGM51+evinqZfq630C5ZKnrjfY6NcPoejMxOC7wEVExmGBxpVIXVuyAovwCJ2G+QY5rLDOLDm+jxrt7OnUl/isGb7XtSEei9gT2G7RrvOn7bpsHTaV+pZEOLQ7nnqLu2Z8gYj8h28SYxxo0+AxYep6ZKfJ9zIbtLKFZ8PXNKyglUO9c4QfCPrI4RvFgkc1OtdDnS/rw/hzSqx2fzUj0V+0qvHU+YgA7qrUAODPI3PBbgSlSn0YDplgwvBN0ofcN2CG1LnE1O0tbebFaL6w8QOka0IrLM7fxBfnDz9f01/3R6BIZKysaxtaKEl91eKZhCfoPaFi/DRYmdTDz2nI4QLxnRYXQHzvJhEXm2smHaDZA4KN2pRvBK52Bc3J/cNz0zRp1FymUT9pcb0b20/tWqiYPN0XWdSveOpb2ik5NfhTstaSuMEEu10tYe4WPkKNo9rbH6Yuy2LPoi7MLSXUsTWxL4WK53xflfV1PPhavtMYKfRA6AQoi7oWfeuWdGy+jmlQhz6t3fzhmKNs4TSVuh6Lo0io47lKLPI34m+FjDqB2uJzL0ILFSsgqoHQURRUOCFja6KO+uzz8XW6tFdpfN2/YCI7MJ369UgoJKG+4v9hFYe3orUCUafTsCTYjUDdYs0MmE4v+cDkqpVRR71Xe4a94hJRj63RsYxRIPVjGPXe5QnRdt5PxAJh1MVYFjb2QOrLLOr6FU/datJmXm7nsWAyGUhSBVg3xdTZakTM6fHo2wMw6mXWTZMq09dHRfo6oW5pcbWGPPXk8gWnsZZRh6ZBg46GQSuLJY8y/xtG3ZMlq1ZBPc+uY5cCaGEWzYQEHyYRh+GF733jKFlHU5oPQ8WSoNfCS5LeBz0Oog7Nh/kcdeLDiMsc2yI+DLYOWvZiP4D6iZ3yxFEBnZhoTvnIYfd+MvcbRl36kkwV1Im/LualEE7Y2MuoExuVbUAA1Ocp/jrTKcywM/vt36dD1/PClzXcp6jrgqh70k3AqqBO5qZiHXhu2iDfIqHeT85NRQGoD3AwaJr+KSz+ZRxypzzf3D89vZ6/8OYCRB2a0/tJ6stkHGYkrDfIqHdwcD07xQJAnS5/pZsYYJaA7L1FGPX8OmoVUZ8nY47kRggxx2zqJJoW6+zLyOJAqGMzZYmd/ZrMXYE7SQmdPUUQ6uZHfh21iqjX8JIci1H6bo2wFiWnPiIB/RVXYokiyhDqA5I6xd+6JiKL6sBgoWyLF0g1gPeSqqG+JdDGpAhdKqJBEin12hH2ttGCGpn5UOPiiRDqNAMPLakvNApWAsmdPAa+puuk5ijSaQ+AOuAFmYqo03VTeziet0cnG5KAyJjKqQ/qOGaiac15u7293uAYCo3gg6h3NmSyhRbbUXs+nuKsA9zK/PdNeexnSW/7kRoNAHXI+6YVUb+bkSX5IPhEl/ijwVFO3bcxNKyPojQDlnMDol67oJkfVlgHyccjEWjwu9Xm4bnIvfvqFog5Qt6irIh67aIRD6Xw6SwA6sl8mLoemXkYdR97IhjDXuaA7yNgeOb7zTOZGZ2+3JtegUiv/PWYWnXUa4ONkHWlo00i9yufem0g5n7V7VYxHyasVsxA8x8cFn8vsmeGYXqu+yOUG/xSWwHqoA17SQ
+        ainltoGRRCfKbWiiYucqIZhkGuUiwNso3soDhPfRbWueFL+SOob510HWdKComOC/x9Uur+hGuIbEsP1LCQ1uTaXHx/GCY4deMQkm8+WOHIaW6hOQ6vckdG4YFVbFYzut7MgodiE4vP1+5wBfyMH8ds4ymqo/F0OOvNhpvFXGh9H1cAesO0fbm8Cus42t7xx7tF90IqQ30/G3+Fi/ifrUKaAQ9pRrIO+F51pamr3WESAv9iQ3nqahv2pEpth1SEutqXOk2l9kMqQF2W8/VvCr5PbynqnmyV+h8V8JenylGPtt1UEgTdf70UdbX/epZuS/kxIOrqtway9VbGj4FQV/tR5+mshGkHZNxJ83j/ccF/OyBCSvvxOutcQ214ny/pb4OlyDs7D/SY5fAbauN1mdYlsJteqKwT1Qbgckl+frC41G8+QgT7rSo4dOmmdkqBnvP2Ny4M/VH+hUqBTjN/t7qoDFcNpGB1J2XDvqJMQ8UBiui19CIHJ28iebVUKaZfnzbuhqu2uC+s9SetjOmpny4poze3fHc33IkKvZTTelfWunue8l3K68YoMWUyTOdJLRx9Rt3Hw4L93fC8M7Uu/Vl1z386cPtueOaxcherUPfhw4H9jrjp7h7VIFqZTh93rgS8b83NV7V6UbHW57sffpdPQ28EydXmq5r9/y/qPtzvTM9xghd8zWC/++BFX8//9/D3jTLm/6e669tfb6+/P94nu8nk/ePp/vzlWbmJSkpKSkpKSkpKSkpKSkpKSgD9B0TcRMVn/rCDAAAAAElFTkSuQmCC" alt="" height="20px" width="100"></b></label><br />
+      <input for="male" type="radio" name="gender" />PhonePay
+</form>
+<form>
+    <label for="GoolglePay"><b>Paytm</b><img src="https://1000logos.net/wp-content/uploads/2021/03/Paytm_Logo.jpg" alt="" height="20px" width="50px"></label><br />
+      <input for="Paytm" type="radio" name="Paytm" />Paytm
+</form>
+<a class="close" href="#">&times;</a>
+<div class="content">
+
+</div>
+</div>
+</div>
+<button><a href="website.html">GO TO HOME PAGE</a></button>
+</body>
+</html>

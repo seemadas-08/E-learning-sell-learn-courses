@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideDown(3000);
+                })
+                $("#flip").dblclick(function(){
+                    $("#panel").slideUp(3000);
+                })
+            })
+        </script>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{
+            margin: 0px;
+            padding: 0px;
+            }
+            body {
+            height: 4000px;
+            }
+            nav {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            justify-content: center;
+            top: 0px;
+            cursor: pointer;
+            background:black;
+            }
+            ul {
+            display: flex;
+            }
+            li {
+            list-style: none;
+            padding: 50px;
+            
+            }
+            a {
+            text-decoration: none;
+            color: white;
+            }
+            a:hover {
+            color: rgb(214, 230, 74);
+            }
+            .frontimg {
+            width: 100%;
+            background-repeat: repeat-x;
+            border: solid red 3px;
+            }
+            .y1 {
+            background-color: black;
+            }
+            h1 {
+            color: green;
+            margin: 10px;
+            padding: 10px;
+            }
+            .bio {
+            border-width: 20px;
+            border-color: palegoldenrod;
+            background-color: brown;
+            color: aliceblue;
+            margin: 20px;
+            width: 900px;
+            height: 40px;
+            text-align: center;
+            font-style: italic;
+            font-size: 20px;
+            margin-left: 16%;
+            margin-top: 2px;
+            }
+            p {
+            margin: 10px;
+            padding: 10px;
+            }
+            h1{
+                color: crimson;
+            }
+            .y{
+                color:brown;
+                background-color: black;
+                 text-align: center;
+                word-spacing: 3px;
+                letter-spacing: 2px;
+            }
+            .a2{
+                background-color: brown;
+                display: flex;
+                font-size: xx-large;
+                color: rgb(237, 231, 233);
+                
+            }
+            .a2 .li{
+                text-align: center;
+
+            }
+            .b1{
+                background-color: black;
+        
+                
+            }
+            .b1 .a3{
+                text-align: center;
+                color: bisque;
+                font-size: 4em;
+                padding: 100px;
+            }
+            .html{
+                width: 350px;
+                height: 300px;
+            }
+            .card1, .card4{
+                background-color:black; 
+                height: 600px; 
+                width: 400px; 
+                border: solid grey;
+                color: white;
+                padding-top: 18px;
+            }
+            .card2,.card5{
+                background-color:black; 
+                height: 600px; 
+                width: 400px; 
+                border: solid grey;
+                color: white;
+                margin-left:5%;
+                padding-top: 18px;
+            }
+            .card3,.card6{
+                background-color:black; 
+                height: 600px; 
+                width: 400px; 
+                border: solid grey;
+                color: white;
+                margin-left:10%;
+                padding-top: 18px;
+            }
+          #lec{
+            background-color: black;
+            font-size: 45px;
+            text-align: center;
+            color: white;
+          }
+          .cards{
+           
+           margin-left: 6%;
+           background-color: black;
+          }
+          .space{
+            width: 50px;
+            height: 30px;
+          }
+          .card1:hover{
+            border: solid red;
+          }.card2:hover{
+            border: solid red;
+          }
+          .card3:hover{
+            border: solid red;
+          }
+          .card4:hover{
+            border: solid red;
+          }
+          .card5:hover{
+            border: solid red;
+          }
+          .card6:hover{
+            border: solid red;
+          }
+          
+          #flip{
+                padding:10px;
+                border: solid peru;
+            height: 80px;
+            width: 1470px;
+            background-color: brown;
+            color: white;
+            font-family: cursive;
+            text-align: center;
+            font-size: 50px;
+            }
+            #panel{
+                background-color:brown;
+                padding:50px;
+                display: none;
+                border: solid grey;
+            }
+            .a1{
+                background-color:white; 
+                height: 270px; 
+                width: 300px; 
+                border: solid grey;
+                color: black;
+                padding-top: 18px;  
+                text-align: center;
+                
+            }
+            .a3{
+                background-color:white; 
+                height: 270px; 
+                width: 300px; 
+                border: solid grey;
+                color: black;
+                padding-top: 18px;  
+                text-align: center; 
+                font-size: x-small;
+                text-align: center;
+                margin-left: 5%;
+            }
+            .a4{
+                background-color:white; 
+                height: 270px; 
+                width: 300px; 
+                border: solid grey;
+                color: black;
+                padding-top: 18px;  
+                text-align: center; 
+                font-size: x-small;
+                text-align: center;
+                margin-left: 8%;
+            }
+            .a5{
+                background-color:white; 
+                height: 270px; 
+                width: 300px; 
+                border: solid grey;
+                color: black;
+                padding-top: 18px;  
+                text-align: center; 
+                font-size: x-small;
+                text-align: center;
+                margin-left: 10%;
+            }
+            .tab1{
+                margin-left: 5%;
+            }
+            .n1{
+                background-color: white;
+                font-size: 27px;
+            }
+            h2{
+                text-align: center;
+                padding-top: 60px;
+            }
+            table,tr,td{
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+          .gap1,.gap2{
+            display: flex;
+            row-gap: 110px;
+          }
+          .r1{
+            text-align: center;
+            font-size: 24px;
+            color: black;
+            background-color: white;
+          }
+          .login{
+            border: solid red ;
+           background-color: black;
+           color: white;
+           height: 30px;
+           width: 60px;
+          }
+          .login:hover{
+            border: wheat solid;
+            background-color: red;
+          }
+          .signup{
+            border: solid red ;
+           background-color: black;
+           color: white;
+           height: 30px;
+           width: 60px;
+          }
+          .signup:hover{
+            border: wheat solid;
+            background-color: red;
+          }
+          #color{
+            color: white;
+          }
+            </style>
+            </head>
+            <body>
+                <div class="container">
+            <nav>
+            <ul>
+            <img src="https://cdn-icons-png.flaticon.com/512/5943/5943239.png" height="150px" width="150px">
+            <h1>E-Learning</h1>
+            <li><a href="website.html">HOME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="carousel.html">PLACEMENT</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+           <li><a href="login1.html"><button class="login">LOGIN</button></a></li>
+           <li><a href="signup.html"><button class="signup">SIGNUP</button></a></li>
+            </ul>
+            </nav>
+            <img class="frontimg" src="https://t3.ftcdn.net/jpg/02/95/48/56/360_F_295485648_O6JGVJFklqTUKmpHgxm8MNHCWoR85fuJ.jpg" width="1000px" height="500px" alt="Taj Mahal">
+            <div class="y1">
+            <h1 class="y"><i> <span id="color">THE BEST PLACE</span> <br>
+                <b> FOR ONLINE COURSE!!!</b><br>
+                  <span id="color">ALL OVER INDIA</span></i></h1>
+            <div class="bio"><marquee behavior="scroll" direction="left" scrollamount="10">Get training from leading experts at Google, using industry standard tools and techniques.</marquee></div>
+            <p></p>
+            </div>
+            <div class="a2">
+                <li>100+ <br>QUESTIONS</li>
+                <li>20+ <br>LECTURES</li>
+                <li>150+ <br>QUIZES</li>
+                <li>500+ <br>LEARNER</li>
+                <li>99% <br>PLACEMENT</li>
+            </div>
+            <div class="b1">
+            <h1 id="lec"><br><u>LECTURE </u><br><br>
+                <table class="cards">
+                    <div class="container1">
+                    <tr class="c1"> <td>
+                        <div class="card1">
+   <img class="html" src="https://elearn.interviewgig.com/wp-content/uploads/2020/05/HTML5-eLearn.jpg" alt="img">
+   <p style="text-align: center; font-size: 30px;">HTML<br><span style="font-size: 17px;">skillgo-It is especially for Online Courses & Education websites.</span>
+    <br><span><button style="background-color: red; color: white; width: 90px; height: 35px;"><a href="payment.html">Buy course</a></button> <br><del>Rs.9000</del>Rs.7000</span></p>
+</td></div>
+
+                
+                <td>   <div class="card2">
+<img class="html" src="https://blog.templatetoaster.com/wp-content/uploads/2020/05/Bootstrap-5-Facebbok.png" alt="img">
+<p style="text-align: center; font-size: 30px;">BOOTSTRAP<br><span style="font-size: 17px;">skillgo-It is especially for Online Courses & Education websites.</span>
+<br><span><button style="background-color: red; color: white; width: 90px; height: 35px;"><a href="payment.html">Buy course</a> </button> <br><del>Rs.1800</del>Rs.9000</span></p>
+            </div>
+        </td>
+    
+        <td>   <div class="card3">
+            <img class="html" src="https://wallup.net/wp-content/uploads/2017/11/17/227942-CSS-CSS3.jpg" alt="img">
+            <p style="text-align: center; font-size: 30px;">CSS<br><span style="font-size: 17px;">skillgo-It is especially for Online Courses & Education websites.</span>
+            <br><span><button style="background-color: red; color: white; width: 90px; height: 35px;"><a href="payment.html">Buy course</a></button> <br><del>Rs.1700</del>Rs.1000 only</span></p>
+                        </div>
+                    </td></tr> 
+                    <tr class="space"></tr>
+                <tr>
+                    <td>
+                        <div class="card4">
+   <img class="html" src="https://i.ytimg.com/vi/XyDKchVvlCg/maxresdefault.jpg" alt="img">
+   <p style="text-align: center; font-size: 30px;">DSA<br><span style="font-size: 17px;">skillgo-It is especially for Online Courses & Education websites.</span>
+    <br><span><button style="background-color: red; color: white; width: 90px; height: 35px;"><a href="payment.html">Buy course</a></button> <br><del>Rs.1900</del>Rs.1100</span></p>
+</td></div>
+<td>
+    <div class="card5">
+<img class="java" src="https://s7280.pcdn.co/wp-content/uploads/2017/09/JavaDeveloperRolesandResponsibilities_Final.jpg.optimal.jpg" alt="img"  width="400px" height="350px">
+<p style="text-align: center; font-size: 30px;">JAVA<br><span style="font-size: 17px;">skillgo-It is especially for Online Courses & Education websites.</span>
+<br><span><button style="background-color: red; color: white; width: 90px; height: 35px;"><a href="payment.html">Buy course</a></button> <br><del>Rs.1900</del>Rs.12000</span></p>
+</td></div>
+
+<td>
+    <div class="card6">
+<img class="java" src="https://wallpapercave.com/wp/wp8661113.jpg" alt="img" width="400px" height="350px">
+<p style="text-align: center; font-size: 30px;">python<br><span style="font-size: 17px;">skillgo-It is especially for Online Courses & Education websites.</span>
+<br><span><button style="background-color: red; color: white; width: 90px; height: 35px;"> <a href="payment.html">Buy course</a></button> <br><del>Rs.1700</del>Rs.10000</span></p>
+</td></div>
+                </tr>
+                </table>
+            
+                </div>
+
+            </div>
+            <div id="flip"><u>Projects:~</u></div>
+            <div id="panel">
+         <table class="tab1">
+            <tr> <td><div class="a1">
+                <a href="https://in.video.search.yahoo.com/search/video;_ylt=Awr1SewAKqBlL6gZiX27HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Nj?p=eagency+project+using+html+css+and+javascript+video&mkr=8&vm=r&type=E210IN826G0&ei=UTF-8&fr=mcafee&turl=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOVP.FoZKXKNg4i5mBtZwbg2hEgEsDh%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DSjhiZ_ySGzA&tit=How+to+Make+an+Agency+Website+Using+Html+CSS+JavaScript&pos=2&vid=6346642d71b275912a73f33395df9a71&sigr=6Dl95g0xqszG&sigt=6QP_P.zV8skB&sigi=7jYXez.9d9Ta">
+                    <img src="https://uicookies.com/wp-content/uploads/2018/07/creative-agency-free-simple-css-templates.jpg"
+                     alt="Projects" height="200px" width="300px"></a> <br>
+                <i>eAgency Projects <br>using html & css </i>
+            </div></td>
+           <td><div class="a3">
+                <a href="https://in.video.search.yahoo.com/search/video;_ylt=AwrKFiRPLaBlRoIa5g.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Nj?p=portfolio+website+by+html+css+youtube&type=E210IN826G0&ei=UTF-8&fr=mcafee&turl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.CGDUmQD3f91vKdbTI7yO4wHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlgeoAUvoRJU&tit=Build+a+Complete+Personal+Portfolio+Website+Using+Only+HTML+And+CSS+%7C+Pure+HTML+And+CSS&pos=1&vid=fc768efb3937f4aade3021ed0787fa89&sigr=DShtniBBsJuf&sigt=rOEKuHi9SoS8&sigi=P_D.5DeK9MvD">
+                <img src="https://cdn.dribbble.com/users/3245020/screenshots/6453625/modernportfoliodesign-maxres.png"  alt="Projects" height="200px" width="300px"></a> 
+                <br>
+                <em>Portfolio Projects <br>using html, css &js </em></div></td>
+                <td><div class="a4">
+                    <a href="https://in.video.search.yahoo.com/search/video;_ylt=AwrKFiRPLaBlRoIa5g.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Nj?p=portfolio+website+by+html+css+youtube&type=E210IN826G0&ei=UTF-8&fr=mcafee&turl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.CGDUmQD3f91vKdbTI7yO4wHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlgeoAUvoRJU&tit=Build+a+Complete+Personal+Portfolio+Website+Using+Only+HTML+And+CSS+%7C+Pure+HTML+And+CSS&pos=1&vid=fc768efb3937f4aade3021ed0787fa89&sigr=DShtniBBsJuf&sigt=rOEKuHi9SoS8&sigi=P_D.5DeK9MvD">
+                    <img src="https://foolishdeveloper.com/wp-content/uploads/2023/12/image-71.png"  alt="Projects" height="200px" width="250px"></a> 
+                    <em> Responsive Top Navigation Menu Bar<br>projects <br>using html, css &js </em></div></td>
+                    <td><div class="a5">
+                        <a href="https://in.video.search.yahoo.com/search/video;_ylt=AwrKFiRPLaBlRoIa5g.7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Nj?p=portfolio+website+by+html+css+youtube&type=E210IN826G0&ei=UTF-8&fr=mcafee&turl=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOVP.CGDUmQD3f91vKdbTI7yO4wHgFo%26pid%3DApi%26w%3D296%26h%3D156%26c%3D7%26p%3D0&rurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlgeoAUvoRJU&tit=Build+a+Complete+Personal+Portfolio+Website+Using+Only+HTML+And+CSS+%7C+Pure+HTML+And+CSS&pos=1&vid=fc768efb3937f4aade3021ed0787fa89&sigr=DShtniBBsJuf&sigt=rOEKuHi9SoS8&sigi=P_D.5DeK9MvD">
+                        <img src="https://foolishdeveloper.com/wp-content/uploads/2023/12/image-76.png"  alt="Projects" height="200px" width="270px"></a> 
+                        <em> Glassmorphism Profile Card <br>projects <br>using html, css &js </em></div></td>
+
+             </tr>
+         </table>
+            </div>
+            <div class="n1">
+                <h2>Thousands of students achieved their <span style="color: rgb(45, 177, 189);">dream job at</span></h2>
+                <div class="n2">
+                    <table id="tbl">
+                        <tr class="gap1">
+                            <td><div><img id="img1"  src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo-2015-present.jpg"  height="90px" width="90px"></div></td>
+                            <td><div><img id="img2" src="https://i.pinimg.com/736x/4b/95/3e/4b953ed7f947e087346c8a33de0e6721.jpg"  height="90px" width="90px"></div></td>
+                            <td><div><img id="img2" src="https://www.shutterstock.com/image-illustration/amazon-logo-on-transparent-background-260nw-2311644913.jpg" height="60px" width="80px"></div></td>
+                            <td><div><img id="img3" src="https://1000logos.net/wp-content/uploads/2023/06/Airtel-logo.jpg"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://logos-world.net/wp-content/uploads/2020/04/Facebook-Logo.png"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://logo-marque.com/wp-content/uploads/2020/04/Linkedin-Logo-2011%E2%80%932019.jpg"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://www.inetco.com/app/uploads/Cognizant-Logo-640x427.png"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://tse3.mm.bing.net/th?id=OIP.RgxiLMdnxNBA5Q17hnJ2xAHaEK&pid=Api&P=0&h=180"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://tse3.mm.bing.net/th?id=OIP.fU1f4Q6Ctp1XJvSGxh7bZQHaEK&pid=Api&P=0&h=180"  height="100px" width="120px"></div></td>
+
+                        </tr>
+                        <tr class="gap2">
+                            <td><div><img id="img1"  src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-png-full-colour-glyph.png"  height="90px" width="90px"></div></td>
+                            <td><div><img id="img2" src="https://tse3.mm.bing.net/th?id=OIP.EhGYQ7HxEvQwe0P7EHauuQHaGC&pid=Api&P=0&h=180"  height="90px" width="90px"></div></td>
+                            <td><div><img id="img2" src="https://appdriver.co.uk/wp-content/uploads/2019/12/Ola_Cabs_logo.svg_.png" height="60px" width="80px"></div></td>
+                            <td><div><img id="img3" src="http://static.businessworld.in/article/article_extra_large_image/1507540607_t3TwOr_byjus.jpg"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://tse1.mm.bing.net/th?id=OIP.PWb0ottxUtR1QhSE8nS67gHaHa&pid=Api&P=0&h=180"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://onlykutts.com/wp-content/uploads/2022/08/Wipro-logo-1920x1080.png"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png"  height="80px" width="80px"></div></td>
+                            <td><div><img id="img3" src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/phonepe_505_050221042103.jpg"  height="100px" width="100px"></div></td>
+                            <td><div><img id="img3" src="https://logodownload.org/wp-content/uploads/2014/10/paypal-logo-0.png"  height="100px" width="100px"></div></td>
+                        </tr>
+                        
+                    </table>
+                    <div class="r1">+many more</div>
+                </div>
+            </div>
+        </div>
+            </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
